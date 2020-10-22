@@ -1,2 +1,8 @@
 # general-hash-functions
 Hash functions are by definition and implementation generally regarded as Pseudo Random Number Generators (PRNG). From this generalization it can be assumed that the performance of hash functions and comparisons between other hash functions can be determined by modeling the functions as PRNGs. 
+
+ Analysis techniques such a Poisson distribution can be used to analyze the collision rates of different hash functions for different groups of data. In general there is a theoretical hash function known as the Perfect Hash Function for any specific group of data. The perfect hash function by definition states that no collisions will occur meaning no repeating hash values will arise from different elements of the group.
+
+In reality it is very difficult to find a perfect hash function for an arbitrary set of data, and furthermore the practical applications of perfect hashing and its variant minimal perfect hashing are quite limited. So instead one may choose to pursue the concept of an Ideal Hash Function, which is commonly defined as a function that produces the least amount of collisions for a particular set of data.
+
+One of the fundamental problems with hashing data or specifically mapping values from one domain to another, is that there are soo many permutations of types of data, some highly random, others containing high degrees of patterning or structure that it is difficult to generalize a hash function for all data types or even for specific data types. All one can do is via trial and error and utilization of formal hash function construction techniques derive the hash function that best suites their needs. Some factors to take into account when choosing hash functions are: 
